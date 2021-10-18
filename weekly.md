@@ -1,0 +1,3 @@
+- SEXTO SPRINT -
+Durante el desarrollo del sexto sprint hemos realizado muchas reuniones de corta duración para definir cuestiones simples relativas al estilo de trabajo en el repositorio (por ejemplo crear archivos "test"). Además, hubo reuniones más largas en las que comenzamos con el desarrollo de ciertos puntos entregables entre todos para luego dividirnos las tareas. 
+En general, aprovechamos las reuniones para que alguien presentara la pantalla y entre todos realizar el primer paso de cada uno de los puntos entregables, por ejemplo los modelos. De ese modo, la división de tareas fue muy fluida y práctica.

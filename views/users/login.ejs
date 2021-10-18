@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include('../partials/head')%>
+<body>
+<%-include('../partials/header')%>
+    <main>
+        <%-include('../partials/sidebar')%>
+        <div class="card-login">
+            <form action="" method="POST">
+                <div class="msg-login">
+                    <h4>Bienvenido! Ingresá tu e-mail y contraseña de The Book Store</h4>
+                </div>
+                    <div class="container-login">
+                        <label for="mail">E-mail</label>
+                        <p style="color: red;" id="error-mail"></p>
+                        <input type="email" name="email" id='email' placeholder="Ingrese su e-mail" >
+                        <% if (locals && locals.error && locals.error.email) { %>
+                            <p style="color:red"><%= locals.error.email.msg %> </p>
+                        <% } %>
+                        <label for="password">Contraseña</label>
+                        <p style="color: red;" id="error-pass"></p>
+                        <input type="password" name="password" id="password" placeholder="Ingrese contraseña" >
+                        <% if (locals && locals.error && locals.error.password) { %>
+                            <p style="color:red" ><%= locals.error.password.msg %> </p>
+                        <% } %>
+                        <div class="container-button">
+                            <button class="btn btn-outline-primary" type="submit" id='button-submit'>Ingresar</button>
+                            <label>
+                                <input type="checkbox" name="remember"> Recordar usuario
+                            </label>
+                        </div>
+                        <div class="container-links-psw">
+                            <ul type="none">
+                                <li><a href="/users/register">Crear cuenta</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </main>
+    <script src="/js/sidebarScript.js"></script>
+    <script src="/js/loginValidations.js"></script>
+</body>
+<%-include('../partials/footer')%>
+</html>
